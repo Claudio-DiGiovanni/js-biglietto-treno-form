@@ -12,9 +12,22 @@
     <div class="container">
         <h1>acquista qui il tuo biglietto</h1>
         <input type="text" name="name" id="nome" placeholder="Inserisci il tuo nome">
-        <input type="number" name="km" placeholder="Quanti km devi fare?">
-        <input type="number" name="age" placeholder="Quanti anni hai?">
-        <button type="submit">cliccami</button>
+        <input type="number" id="km" name="km" placeholder="Quanti km devi fare?">
+        <input type="number" id="age" name="age" placeholder="Quanti anni hai?">
+        <button id="submit" type="submit">cliccami</button>
+    </div>
+    <div class="container ticket">
+        <div class="logo">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/trenitalia-logo-png-transparent.png" alt="">
+        </div>
+        <div class="content">
+            <span class="title">numero biglietto</span>
+            <span id="nTicket"></span>
+            <span class="title">posto a sedere</span>
+            <span id="sit"></span>
+            <span class="title">prezzo</span>
+            <span id="price"></span>
+        </div>
     </div>
 </body>
 </html>
