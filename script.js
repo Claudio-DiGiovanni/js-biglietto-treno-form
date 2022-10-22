@@ -22,9 +22,15 @@ document.getElementById("submit").addEventListener("click", function () {
 
     document.getElementById("nTicket").innerHTML = parseInt(Math.random() * (9999 - 1000) + 1000);
     document.getElementById("sit").innerHTML = parseInt(Math.random() * (300 - 1) + 1);
-    document.getElementById("price").innerHTML = totalPrice;
+    document.getElementById("price").innerHTML = totalPrice + "&euro;";
+    document.getElementById("name").innerHTML = nome;
+    document.getElementById("ticket").classList.add("d-block")
+    document.getElementById("ticket").classList.remove("d-none")
 
 
 
 })
 
+document.getElementById("cancel").addEventListener("click", function () {
+    window.location.reload(true)
+})
